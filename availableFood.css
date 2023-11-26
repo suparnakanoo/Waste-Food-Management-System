@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg,#7ec6d1, #efefef);
+    height: 100vh;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+    padding: 5px 0px;
+}
+nav{
+    color: white;
+    background-color: #073b4c;
+    
+}
+nav a{
+    color: #d2d2d2;
+    text-decoration:none ;
+}
+nav a:hover{
+  color: white;
+  text-decoration:none ;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline; /* Display list items horizontally */
+  margin-right: 20px; /* Adjust the margin as per your preference */
+}
+
+/* Optional: To remove the margin from the last item */
+nav ul li:last-child {
+  margin-right: 0;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.search-form {
+  width: 60%; /* Adjust the width as needed */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.search-form select{
+  padding: 5px;
+  border-radius: 7px;
+}
+.search-form input[type="text"] {
+  padding: 5px;
+  border-radius: 7px;
+}
+/* Styling for the button */
+.search-form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: rgb(58, 130, 217);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-form button[type="submit"]:hover {
+  background-color: rgb(33, 73, 122);
+}
+/* Table styling */
+.result {
+  margin: 20px auto;
+  width: 80%;
+}
+
+.result table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.result th, .result td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.result th {
+  background-color: #f2f2f2;
+}
+
+.result tbody tr:hover {
+  background-color: #f1f1f1;
+}

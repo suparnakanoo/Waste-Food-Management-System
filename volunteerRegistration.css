@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg,#7ec6d1, #efefef);
+    height: 100vh;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+    padding: 5px 0px;
+}
+nav{
+    color: white;
+    background-color: #073b4c;
+    
+}
+nav a{
+    color: #d2d2d2;
+}
+nav a:hover{
+  color: white;
+  text-decoration:none ;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline; /* Display list items horizontally */
+  margin-right: 20px; /* Adjust the margin as per your preference */
+}
+
+/* Optional: To remove the margin from the last item */
+nav ul li:last-child {
+  margin-right: 0;
+}
+.volunteer-registration{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  }
+
+/* .volunteer-registration h2{
+    text-align: center;
+    padding: 20px 0;
+  border-bottom: 1px solid silver;
+} */
+.volunteer-registration{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .input-field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+form .input-field-link{
+  position: relative;
+  margin: 30px 0;
+}
+form .input-field-link a{
+  text-decoration: none;
+}
+
+.input-field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .input-field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .input-field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+  }
+.input-field input:focus ~ label,
+.input-field input:valid ~ label{
+  top: -5px;
+  color: #2691d9;
+}
+.input-field input:focus ~ span::before,
+.input-field input:valid ~ span::before{
+  width: 100%;
+}
+button[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    margin-bottom:5px ;
+  }
+  button[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: .5s;
+  }

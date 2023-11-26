@@ -1,0 +1,107 @@
+h1{
+    text-align: center;
+    padding: 5px 0px;
+}
+nav{
+    color: white;
+    background-color: #073b4c;
+    
+}
+nav a{
+    color: #d2d2d2;
+}
+nav a:hover{
+  color: white;
+  text-decoration:none ;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Adjust the margin as per your preference */
+}
+
+/* Optional: To remove the margin from the last item */
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+.slider{
+    height:250px;
+    margin:auto;
+    position:relative;
+    width:90%;
+    display:grid;
+    place-items:  center;
+    overflow: hidden;
+}
+.slide-track{
+    display:flex;
+    
+    width: calc(250px*12);
+    animation: scroll 40s linear infinite;
+}
+.slide-track:hover{
+    animation-play-state: paused;
+}
+@keyframes scroll{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform:translateX(calc(-250px*6));
+    }
+}
+.slide{
+    height:200px;
+    width:250px;
+    display:flex;
+    align-items:center;
+    padding:15px;
+    perspective: 100px;
+}
+
+img{
+    width:100%;
+    transition: transform 1s;
+}
+img:hover{
+    width:100%;
+    transform:translateZ(20px);
+}
+h3{
+    color: rgb(81, 81, 225);
+}
+.main-container {
+
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px; /* Adjust this value as needed */
+  margin: 0 auto; /* Centers the container */
+  padding: 0 20px; /* Adds padding on the sides */
+  box-sizing: border-box; 
+  }
+  
+  .sub-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+  
+  .container1 {
+    width: 60%;
+  }
+  
+  .container2 {
+    width: 40%;
+    /* Additional styles */
+  }
+.container2:nth-of-type(1){
+    margin-top:2% ;
+}
+li h6{
+    color:rgb(106, 123, 198);
+}

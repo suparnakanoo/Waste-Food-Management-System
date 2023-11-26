@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg,#7ec6d1, #efefef);
+    height: 100vh;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+    padding: 5px 0px;
+}
+nav{
+    color: white;
+    background-color: #073b4c;
+    
+}
+nav a{
+    color: #d2d2d2;
+}
+nav a:hover{
+  color: white;
+  text-decoration:none ;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline; /* Display list items horizontally */
+  margin-right: 20px; /* Adjust the margin as per your preference */
+}
+
+/* Optional: To remove the margin from the last item */
+nav ul li:last-child {
+  margin-right: 0;
+}
