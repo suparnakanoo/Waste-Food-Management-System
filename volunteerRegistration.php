@@ -1,5 +1,5 @@
 <?php
-    require("volunteerRegistrationConnection.php");
+    require("connection.php");
 ?>
 
 <!DOCTYPE html>

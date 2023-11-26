@@ -1,5 +1,5 @@
 <?php
-require("adminPanelConnection.php");
+require("connection.php");
 
 $toDate=$fromDate="";
 $data = [];
